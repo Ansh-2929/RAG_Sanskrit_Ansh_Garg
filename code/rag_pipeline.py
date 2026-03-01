@@ -1,27 +1,4 @@
-"""
-rag_pipeline.py
----------------
-End-to-end Sanskrit RAG pipeline orchestrator.
 
-Ties together:
-  - SanskritDocumentLoader  (document_loader.py)
-  - HybridRetriever         (retriever.py)
-  - LlamaCppGenerator / GPT4AllGenerator / ExtractiveGenerator (generator.py)
-
-Usage:
-    # Extractive (zero install):
-    python rag_pipeline.py --data_dir ../data --query "कालीदासः कः?" --generator extractive
-
-    # GPT4All (auto-downloads model):
-    python rag_pipeline.py --data_dir ../data --query "..." --generator gpt4all
-
-    # llama.cpp with local GGUF:
-    python rag_pipeline.py --data_dir ../data --query "..." --generator llama_cpp \
-        --model_path /path/to/model.gguf
-
-    # Interactive REPL:
-    python rag_pipeline.py --data_dir ../data --interactive --generator extractive
-"""
 
 from __future__ import annotations
 
