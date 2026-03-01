@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Index & model caches
+*.pkl
+
+# Temporary / generated files
+eval_results.json
+code/eval_results.json
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE folders
+.vscode/
+.idea/
